@@ -6,21 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Proyecto con Javascript</title>
     <!-- ESTILOS -->
-    <link rel="stylesheet" href="css/estilos.css">
-    <link id="theme" rel="stylesheet" href="css/green.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link id="theme" rel="stylesheet" href="../css/green.css">
 
     <!-- JQUERY -->
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <!-- SLIDER -->
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
-    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
 
-    <!-- MOMENT -->
-    <script type="text/javascript" src="js/moment.min.js"></script>
-    <script type="text/javascript" src="js/moment-with-locales.min.js"></script>
+    <!-- JQUERYUI -->
+    <link rel="stylesheet" href="../js/jqueryUi/jquery-ui.min.css">
+    <link rel="stylesheet" href="../js/jqueryUi/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="../js/jqueryUi/jquery-ui.theme.min.css">
+    <script type="text/javascript" src="../js/jqueryUi/jquery-ui.min.js"></script>
+
+    <!-- Form Validator -->
+    <script type="text/javascript" src="../js/formValidator/form-validator/jquery.form-validator.min.js"></script>
 
     <!-- SCRIPTS -->
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
 
 </head>
 <body>
@@ -35,30 +38,48 @@
             <div class="clearfix"></div>
             <nav id="menu">
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="doc/reloj.html">Reloj</a></li>
-                    <li><a href="doc/about.html">Sobre mi...</a></li>
-                    <li><a href="doc/contact.html">Contacto</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="reloj.html">Reloj</a></li>
+                    <li><a href="about.html">Sobre mi...</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
                 </ul>
             </nav>
         </header>
 
-        <div id="slider">
-            <div class="galeria">
-                <div><img src="img/hojas.jpg" title="hojas"></div>
-                <div><img src="img/rojo.jpg" title="rojo"></div>
-                <div><img src="img/cielo.jpg" title="cielo"></div>
-            </div>
-        </div>
-
         <section id="content"><!--Contenido-->
-            <div id="posts">
-                <!-- Cargar Post desde un Json -->
+            <div id="box">
+                <!-- Cargar formulario de contacto -->
+                <h2>Contacto</h2>
+                <form action="" method="POST" id="form_contact">
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" data-validation="alphanumeric"/>
+
+                    <label for="lastname">Apellido:</label>
+                    <input type="text" name="lastname" data-validation="alphanumeric"/>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" data-validation="email"/>
+
+                    <label for="gender">Género</label>
+                    <select name="gender" data-validation="required">
+                        <option value="men">Hombre</option>
+                        <option value="woman">Mujer</option>
+                    </select>
+
+                    <label for="birth">Fecha de Nacimiento:</label>
+                    <input type="text" name="date" data-validation="date" data-validation="dd/mm/yyyy"/>
+
+                    <label for="age">Edad:</label>
+                    <input type="number" name="age" data-validation="number"/>
+                    <br/>
+
+                    <input type="submit" value="Enviar"/>
+                </form>
             </div>
             <aside id="sidebar">
                 <div id="about">
                     <h4><span>¿quien soy?</span></h4>
-                    <img src="img/caracol.jpg" alt="caracol">
+                    <img src="../img/caracol.jpg" alt="caracol">
                     <p>
                         Ut sollicitudin placerat pulvinar. Curabitur semper consectetur diam vel semper.
                         Aliquam faucibus massa non lacus auctor, ac ultrices mi laoreet. Aenean rutrum
@@ -98,6 +119,5 @@
         <a href="#" class="subir">Ir arriba</a>
         Master de JavaScript
     </footer>
-    <script src="js/main.js"></script>
 </body>
 </html>

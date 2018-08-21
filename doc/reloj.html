@@ -6,21 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Proyecto con Javascript</title>
     <!-- ESTILOS -->
-    <link rel="stylesheet" href="css/estilos.css">
-    <link id="theme" rel="stylesheet" href="css/green.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/reloj.css">
+    <link id="theme" rel="stylesheet" href="../css/green.css">
 
     <!-- JQUERY -->
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <!-- SLIDER -->
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
-    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
 
     <!-- MOMENT -->
-    <script type="text/javascript" src="js/moment.min.js"></script>
-    <script type="text/javascript" src="js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="../js/moment.min.js"></script>
+    <script type="text/javascript" src="../js/moment-with-locales.min.js"></script>
 
     <!-- SCRIPTS -->
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
 
 </head>
 <body>
@@ -35,30 +33,23 @@
             <div class="clearfix"></div>
             <nav id="menu">
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="doc/reloj.html">Reloj</a></li>
-                    <li><a href="doc/about.html">Sobre mi...</a></li>
-                    <li><a href="doc/contact.html">Contacto</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="reloj.html">Reloj</a></li>
+                    <li><a href="about.html">Sobre mi...</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
                 </ul>
             </nav>
         </header>
 
-        <div id="slider">
-            <div class="galeria">
-                <div><img src="img/hojas.jpg" title="hojas"></div>
-                <div><img src="img/rojo.jpg" title="rojo"></div>
-                <div><img src="img/cielo.jpg" title="cielo"></div>
-            </div>
-        </div>
-
         <section id="content"><!--Contenido-->
-            <div id="posts">
-                <!-- Cargar Post desde un Json -->
+            <div id="box">
+                <!-- Reloj -->
+                <div id="reloj"></div>
             </div>
             <aside id="sidebar">
                 <div id="about">
                     <h4><span>¿quien soy?</span></h4>
-                    <img src="img/caracol.jpg" alt="caracol">
+                    <img src="../img/caracol.jpg" alt="caracol">
                     <p>
                         Ut sollicitudin placerat pulvinar. Curabitur semper consectetur diam vel semper.
                         Aliquam faucibus massa non lacus auctor, ac ultrices mi laoreet. Aenean rutrum
@@ -98,6 +89,5 @@
         <a href="#" class="subir">Ir arriba</a>
         Master de JavaScript
     </footer>
-    <script src="js/main.js"></script>
 </body>
 </html>

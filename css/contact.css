@@ -1,0 +1,10 @@
+#form_contact{
+    width: 50%;
+    margin-top: 15px;
+    font-family: Helvetica, Arial;
+}
+#form_contact label{
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}

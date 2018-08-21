@@ -117,7 +117,9 @@
 
 form input[type="text"],
 form input[type="text"],
-form input[type="text"]{
+form input[type="text"],
+form input[type="number"],
+select{
     padding: 5px;
     border-radius: 2px;
     border: 1px solid #ccc;
